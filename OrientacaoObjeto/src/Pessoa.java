@@ -11,7 +11,12 @@ public class Pessoa {
 		
 	}
 	
-	
+	void dar(int numFigurinhas, Pessoa pessoa) { // A classe é pessoa poruqe chama o objeto, o Pessoa pessoa faz com que qualquer um seja chamado, n é um especifico
+		this.numFigurinhas -= numFigurinhas;
+			
+		pessoa.receber(numFigurinhas);
+		
+	}
 	
 	
 
