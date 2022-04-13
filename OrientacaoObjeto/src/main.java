@@ -22,7 +22,7 @@ public class main {
 		System.out.println("Usuário: " + pessoa2.nome);
 		System.out.println("Saldo de figurinhas: " + pessoa2.numFigurinhas);
 		
-		pessoa1.dar(3, pessoa2); // é por causa desse comando que o pessoa passou a ser o pessoa2
+		pessoa1.dar(4, pessoa2); // é por causa desse comando que o pessoa passou a ser o pessoa2
 		
 		if (pessoa1.numFigurinhas >= 0) { // comando IF, é o SE só que do java
 			
