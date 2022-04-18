@@ -18,6 +18,9 @@ public class Pessoa {
 		
 	}
 	
+	//metodo alternativo: usar o boolean no lugar do void do DAR
+	//os retornos serão true e false, dentro do if que ficar no pessoa
+
 	
 
 }

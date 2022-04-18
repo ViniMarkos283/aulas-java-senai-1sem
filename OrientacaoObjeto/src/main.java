@@ -43,8 +43,9 @@ public class main {
 			System.out.println("transferência recusada, o saldo de nenhum usuário pode ficar negativo");
 		}
 		
-		
-		
+		//metodo alternativo part2
+		//aqui o retorno precisa ser true pra informação aparecer.
+		//o  true precisa ser uma condição do if no Main.
 	}
 
 }
