@@ -12,7 +12,7 @@ public class ContaBancaria { // a classe n pode ser privada senão n vai instanci
 		saldo = 1.0;
 	}
 	public ContaBancaria(boolean ativo, double saldo) {
-		this.ativo = ativo; // o this diz q esse atribuo é da classe
+		this.ativo = ativo; // o this diz q esse atributo é da classe
 		this.saldo = saldo;
 	}
 	//metodo que recebe valores
