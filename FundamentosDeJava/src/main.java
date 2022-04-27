@@ -1,3 +1,4 @@
+import java.util.Scanner;
 
 public class main {
 
@@ -116,11 +117,14 @@ public class main {
 //		for(int x=0; x<10; x++) {
 //			System.out.println(x);
 //		}
+		Scanner entrada = new Scanner(System.in);
+		System.out.println("Digite um valor: ");
+		int y = entrada.nextInt();
 		
 		
 		for(int x=0; x<=10; x++) {
-			System.out.println("5 x " + x + " = " + x*5);
-		}
+			System.out.println(y + " x " + x + " = " + x*y);
+		} 
 		
 		
 	}
