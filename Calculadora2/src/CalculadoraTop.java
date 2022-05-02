@@ -38,7 +38,7 @@ public class CalculadoraTop {
 			control++;
 		}
 		if(control == 0) {
-			System.out.println("Operação inválida, Tente Novamente");
+			System.out.println("Operação inválida, Tente Novamente ");
 		}
 
 	}
