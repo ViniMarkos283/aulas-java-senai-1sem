@@ -8,10 +8,12 @@ public class main {
 		
 		Scanner entrada = new Scanner(System.in);
 	
-		
+		while (lamp.escolha == 2) {
 		if (lamp.estado = true) {
 		System.out.println("lampada encontrada, mas está ligada, o que deseja fazer?");
 		System.out.println("0 - desligar");
+		System.out.println("2 - sair");
+
 		int escolher = entrada.nextInt();
 		}
 		
@@ -21,6 +23,7 @@ public class main {
 				
 				int escolher = entrada.nextInt();
 				}
+		}
 		
 		switch (lamp.escolher) {
 		case 0:
