@@ -1,3 +1,4 @@
+import java.util.Objects;
 
 public class Cliente {
 	
@@ -44,7 +45,26 @@ public class Cliente {
 	// gerado pelo source > toString
 	@Override // significa sobrescrita, le a classe filho ao inves do pai
 	public String toString() {
-		return "Cliente: \n nome = " + nome + ", \n CPF = " + cpf + ", \n Nmero da conta = " + numConta + "]";
+		return "Cliente: \n nome = " + nome + ", \n CPF = " + cpf + ", \n Nmero da conta = " + numConta + "\n *********************************";
+	}
+
+	
+	//gerado pelo hashcode e equal
+	@Override
+	public int hashCode() {
+		return Objects.hash(cpf, nome, numConta);
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Cliente other = (Cliente) obj;
+		return cpf == other.cpf && Objects.equals(nome, other.nome) && numConta == other.numConta; // Esse && é o E, precisa atingir as três condicoes para dar true.
 	}
 	
 	

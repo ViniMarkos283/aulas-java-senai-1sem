@@ -27,20 +27,51 @@ public class main {
 //	
 //		System.out.println(conta2.saldo());
 		
-		Cliente cliente = new Cliente();
+		Cliente cliente1 = new Cliente();
 		
-		cliente.setNome("Marcos");
-		cliente.setCpf(74554645);
-		cliente.setNumConta(894064828);
+		cliente1.setNome("Marcos");
+		cliente1.setCpf(74554645);
+		cliente1.setNumConta(74554645);
 		
 		//mostra dados separados
-//		System.out.println(cliente.getNome());
-//		System.out.println(cliente.getCpf());
-//		System.out.println(cliente.getNumConta());
+//		System.out.println(cliente1.getNome());
+//		System.out.println(cliente1.getCpf());
+//		System.out.println(cliente1.getNumConta());
 		
+		System.out.println(cliente1);
+	
+		//independente de quantos cliente tiver, a formula funciona msm assim
+		
+		Cliente cliente2 = new Cliente();
+		
+		cliente2.setNome("Marcos");
+		cliente2.setCpf(7455645);
+		cliente2.setNumConta(74554645);
+		
+		System.out.println(cliente2);
+		
+//		cliente2 = cliente1;
 		
 		//mostra tudo de uma vez
-		System.out.println(cliente.toString());
+		//System.out.println(cliente.toString());
+		
+		if (cliente1 == cliente2) { //compara o endereço dos objetos
+			System.out.println("Os objetos são iguais"); //  só ficará igual quando ambos objetos apontam pro msm endereço
+		}else {
+			System.out.println("Os objetos são diferentes"); // os objetos sempre serão diferentes, só os dos atributos são iguais
+		}
+		
+		if (cliente1.getNome() == cliente2.getNome()) { //compara apenas o atributo nome
+			System.out.println("Os nomes são iguais"); 
+		}else {
+			System.out.println("Os nomes são diferentes");
+		}
+		
+		if (cliente1.equals(cliente2)) { // o equal compara todos os atributos dos objetos
+			System.out.println("Os atributos dos objetos são iguais");
+		}else {
+			System.out.println("Os atributos dos objetos são diferentes");
+		}
 		
 		
 	}
