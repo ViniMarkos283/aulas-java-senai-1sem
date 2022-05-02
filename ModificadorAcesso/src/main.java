@@ -21,11 +21,27 @@ public class main {
 //		conta1.dar(72.5);
 		
 		//mostra na tela o saldo
-		System.out.println(conta1.saldo());
+//		System.out.println(conta1.saldo());
+//		
+//		ContaBancaria conta2 = new ContaBancaria();
+//	
+//		System.out.println(conta2.saldo());
 		
-		ContaBancaria conta2 = new ContaBancaria();
-	
-		System.out.println(conta2.saldo());
+		Cliente cliente = new Cliente();
+		
+		cliente.setNome("Marcos");
+		cliente.setCpf(74554645);
+		cliente.setNumConta(894064828);
+		
+		//mostra dados separados
+//		System.out.println(cliente.getNome());
+//		System.out.println(cliente.getCpf());
+//		System.out.println(cliente.getNumConta());
+		
+		
+		//mostra tudo de uma vez
+		System.out.println(cliente.toString());
+		
 		
 	}
 

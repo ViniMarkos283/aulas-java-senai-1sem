@@ -18,10 +18,11 @@ public class main {
 		else if (lamp.estado = false) {
 				System.out.println("lampada encontrada, mas está desligada, o que deseja fazer?");
 				System.out.println("1 - ligar");
+				
 				int escolher = entrada.nextInt();
 				}
 		
-		switch (escolher) {
+		switch (lamp.escolher) {
 		case 0:
 		System.out.println("Lampada Desligada");
 		break;
