@@ -1,7 +1,7 @@
 
-public class Animal {
+public class Animal { // Super classe
 
-	public void Falar() {
+	public void Falar() { // metodo falar, que vai ser aproveitado pelas subclasses
 		
 	}
 	
