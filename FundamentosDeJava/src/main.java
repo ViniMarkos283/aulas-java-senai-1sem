@@ -4,36 +4,36 @@ public class main {
 
 	public static void main(String[] args) {
 
-		//int x = 100;
-		//double y  = 200.3;
-		//int a = 0;
-		//double b = 0;
-		//short z = (short) 10000;
-		
-		//a = (int)y; // converte o double em int, sen„o perde informaÁıes //
-		//b = x; // n„o precisou converter, porque o int cabe dentro do double //
-		
-		//System.out.println(a);
-		//System.out.println(b);
-		//System.out.println(z);
-		
+		// int x = 100;
+		// double y = 200.3;
+		// int a = 0;
+		// double b = 0;
+		// short z = (short) 10000;
+
+		// a = (int)y; // converte o double em int, sen√£o perde informa√ß√µes //
+		// b = x; // n√£o precisou converter, porque o int cabe dentro do double //
+
+		// System.out.println(a);
+		// System.out.println(b);
+		// System.out.println(z);
+
 //		int idadePessoa = 19;
 //		
-//		if(idadePessoa < 18) { // primeira condiÁ„o //
-//			System.out.println("vocÍ n„o pode beber");
+//		if(idadePessoa < 18) { // primeira condi√ß√£o //
+//			System.out.println("voc√™ n√£o pode beber");
 //		}
-//		else if(idadePessoa < 60) { // segunda condiÁ„o //
+//		else if(idadePessoa < 60) { // segunda condi√ß√£o //
 //			System.out.println("Bora tomar uma?");
 //		}
 //		else { // caso o valor n se encaixe em nenhuma das condicoes //
 //			System.out.println("Aposentado ou pensionista?");
 //		}
 //
-//		System.out.println("VocÍ tem " + idadePessoa + " anos");
-		
+//		System.out.println("Voc√™ tem " + idadePessoa + " anos");
+
 //		int  num = 2;
 //		
-//		switch(num) { // funÁ„o escolha
+//		switch(num) { // fun√ß√£o escolha
 //		case 1: //caso
 //			System.out.println("Domingo");
 //			break; //manda o switch parar e vai pra depois da chave
@@ -41,7 +41,7 @@ public class main {
 //			System.out.println("Segunda");
 //			break;
 //		case 3:
-//			System.out.println("TerÁa");
+//			System.out.println("Ter√ßa");
 //			break;
 //		case 4:
 //			System.out.println("Quarta");
@@ -53,29 +53,29 @@ public class main {
 //			System.out.println("Sexta");
 //			break;
 //		case 7:
-//			System.out.println("S·bado");
+//			System.out.println("S√°bado");
 //			break;
 //		default: // serve de outrocaso, caso nenhum dos outros sejam atendidos
-//			System.out.println("Este n˙mero n„o corresponde a nenhum dia da semana");
+//			System.out.println("Este n√∫mero n√£o corresponde a nenhum dia da semana");
 //		} //chave*
-		
-		//pra comentar todo o codigo È sÛ usar o crtl + /
-		
+
+		// pra comentar todo o codigo √© s√≥ usar o crtl + /
+
 		// char significa caractere
-//		char caractere = 'b'; // com caractere unico usa-se a aspas simples, sen„o vira uma string
+//		char caractere = 'b'; // com caractere unico usa-se a aspas simples, sen√£o vira uma string
 //		
 //		switch (caractere) {
 //		case 'a':
-//			System.out.println("seu caractere È: a");
+//			System.out.println("seu caractere √©: a");
 //			break;
 //		case 'b':
-//			System.out.println("seu caractere È: b");
+//			System.out.println("seu caractere √©: b");
 //			break;
 //		default:
-//			System.out.println("valor n„o encontrado");
+//			System.out.println("valor n√£o encontrado");
 //
 //		}
-		
+
 //		String farol = "verde";
 //		
 //		switch(farol) {
@@ -85,48 +85,92 @@ public class main {
 //		break;
 //			case "amarelo":
 //		System.out.println(farol);
-//		System.out.println("Luz Amarela: AtenÁ„o");
+//		System.out.println("Luz Amarela: Aten√ß√£o");
 //		break;
 //			case "vermelho":
 //		System.out.println(farol);
 //		System.out.println("Luz Vermelha: Pare");
 //		break;
 //			default:
-//		System.out.println("Cor inv·lida, o farol de transito n„o possui a cor correspondente");
-//		System.out.println("Sugest„o: use cores como: verde, amarelo ou vermelho");
+//		System.out.println("Cor inv√°lida, o farol de transito n√£o possui a cor correspondente");
+//		System.out.println("Sugest√£o: use cores como: verde, amarelo ou vermelho");
 //			break;
 //	
 //		}
-		
+
 //		int x = 0;
 //		
-//		//while È o enquanto, repete algo atÈ a condiÁ„o ser atendida, comeÁa verificando a condiÁ„o e depois faz 
+//		//while √© o enquanto, repete algo at√© a condi√ß√£o ser atendida, come√ßa verificando a condi√ß√£o e depois faz 
 //		while(x<10) {
 //			System.out.println(x);
 //			x = x + 1;
 //		}	
 //		
-//		// segundo tipo de while, o "do" significa faÁa. ele faz primeiro e depois atende a condiÁ„o
+//		// segundo tipo de while, o "do" significa fa√ßa. ele faz primeiro e depois atende a condi√ß√£o
 //		do {
 //			System.out.println(x);
 //			x = x + 1;
-//		}while (x<10); // enquanto isso n„o ocorre
-		
-	
-//		//for È um para
+//		}while (x<10); // enquanto isso n√£o ocorre
+
+//		//for √© um para
 //		for(int x=0; x<10; x++) {
 //			System.out.println(x);
 //		}
-		Scanner entrada = new Scanner(System.in);
-		System.out.println("Digite um valor: ");
-		int y = entrada.nextInt();
-		
-		
-		for(int x=0; x<=10; x++) {
-			System.out.println(y + " x " + x + " = " + x*y);
-		} 
-		
-		
-	}
+//		Scanner entrada = new Scanner(System.in);
+//		System.out.println("Digite um valor: ");
+//		int y = entrada.nextInt();
+//		
+//		
+//		for(int x=0; x<=10; x++) {
+//			System.out.println(y + " x " + x + " = " + x*y);
+//		} 
+//		
 
+		// metodo de um por um
+		int x1 = 3;
+		int y1 = 5;
+		int z1 = 7;
+
+		System.out.println(x1);
+		System.out.println(y1);
+		System.out.println(z1);
+		System.out.println();
+
+		// metodo matriz para double
+		double x[] = { 3, 5, 3, 5 }; // O sinal [] t√° fazendo o Array, que no caso √© a matriz, onde se coloca varias
+										// infos em uma variavel s√≥
+
+		for (int aux = 0; aux < x.length; aux++) { // esse length pega o valor que corresponde ao total das variaveis da
+													// matriz
+			System.out.println("Valor do indice " + aux + " = " + x[aux]); // aqui o "x" t√° recebendo a matriz do aux
+		}
+
+		// metodo matriz para string
+		String nome[] = { "nome1", "nome2", "nome3" };
+		for (int aux1 = 0; aux1 < nome.length; aux1++) {
+			System.out.println(nome[aux1]);
+			if (nome[aux1] == "nome3") { // ca√ßando o numero da indice atrav√©s da informa√ß√£o dentro dela
+				System.out.println("O indice √© o : " + aux1);
+			}
+		}
+
+		int[] ArrayInt = new int[5];
+		String[] ArrayString = new String[4];
+		double[] ArrayDouble = new double[3];
+
+		ArrayInt[3] = 4;
+
+		int[] numero = new int[6];
+		Scanner teclado = new Scanner(System.in); // metodo "leia" 
+
+		for (int aux2 = 0; aux2 < numero.length; aux2++) {
+			System.out.println("Digite algum valor: ");
+			numero[aux2] = teclado.nextInt(); // vai ler a informa√ß√£o dada pelo usuario, vai ser gravados em posi√ßoes
+												// diferentes
+		}
+		for (int aux2 = 0; aux2 < numero.length; aux2++) {
+			System.out.println("Indice " + aux2 + " = " + numero[aux2]); // vai exibir as infos que foram guardadas na
+																			// matriz
+		} 
+	}
 }
