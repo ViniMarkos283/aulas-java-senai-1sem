@@ -1,5 +1,5 @@
 
-public class Aplicacao {
+public class Aplicacao { //interfaces só possuem metodos
 
 	public static void main(String[] args) {
 

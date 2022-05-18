@@ -110,7 +110,7 @@ public class main {
 //		do {
 //			System.out.println(x);
 //			x = x + 1;
-//		}while (x<10); // enquanto isso não ocorre
+//		}while (x<10); // enquanto isso n�o ocorre
 
 //		//for é um para
 //		for(int x=0; x<10; x++) {
@@ -127,50 +127,79 @@ public class main {
 //		
 
 		// metodo de um por um
-		int x1 = 3;
-		int y1 = 5;
-		int z1 = 7;
+//		int x1 = 3;
+//		int y1 = 5;
+//		int z1 = 7;
+//
+//		System.out.println(x1);
+//		System.out.println(y1);
+//		System.out.println(z1);
+//		System.out.println();
+//
+//		// metodo matriz para double
+//		double x[] = { 3, 5, 3, 5 }; // O sinal [] ta fazendo o Array, que no caso é a matriz, onde se coloca varias
+//										// infos em uma variavel só
+//
+//		for (int aux = 0; aux < x.length; aux++) { // esse length pega o valor que corresponde ao total das variaveis da
+//													// matriz
+//			System.out.println("Valor do indice " + aux + " = " + x[aux]); // aqui o "x" tá recebendo a matriz do aux
+//		}
+//
+//		// metodo matriz para string
+//		String nome[] = { "nome1", "nome2", "nome3" };
+//		for (int aux1 = 0; aux1 < nome.length; aux1++) {
+//			System.out.println(nome[aux1]);
+//			if (nome[aux1] == "nome3") { // caçando o numero da indice através da informação dentro dela
+//				System.out.println("O indice é o : " + aux1);
+//			}
+//		}
 
-		System.out.println(x1);
-		System.out.println(y1);
-		System.out.println(z1);
-		System.out.println();
+//		int[] arrayInt = new int[5];  // cria 5 endere�os que apontam pra cinco lugares onde ir�o os inteiros
+//		String[] arrayString = new String[4];
+//		double[] arrayDouble = new double[3];
+//
+//		arrayInt[3] = 4;
+//
+//		int[] numero = new int[6];
+//		Scanner teclado = new Scanner(System.in); // metodo "leia" 
+//
+//		for (int aux2 = 0; aux2 < numero.length; aux2++) {
+//			System.out.println("Digite algum valor: ");
+//			numero[aux2] = teclado.nextInt(); // vai ler a informação dada pelo usuario, vai ser gravados em posiçoes
+//												// diferentes
+//		}
+//		for (int aux2 = 0; aux2 < numero.length; aux2++) {
+//			System.out.println("Indice " + aux2 + " = " + numero[aux2]); // vai exibir as infos que foram guardadas na
+//																			// matriz
+//		} 
 
-		// metodo matriz para double
-		double x[] = { 3, 5, 3, 5 }; // O sinal [] tá fazendo o Array, que no caso é a matriz, onde se coloca varias
-										// infos em uma variavel só
+//		int[] arrayQualquer = new int[3];
+//		Object[] arrayObject = new Object[6]; // matriz generica que recebe qualquer coisa
+//
+//		arrayObject[0] = 12; // recebe inteiro
+//		arrayObject[1] = "Marcos"; // recebe string
+//		arrayObject[2] = 13.0; // recebe double
+//		arrayObject[3] = true; // recebe boolean
+//		arrayObject[5] = arrayQualquer; // e at� endere�o
+//
+//		for (int aux2 = 0; aux2 < arrayObject.length; aux2++) {
+//			System.out.println("Indice " + aux2 + " = " + arrayObject[aux2]);
+//		}
 
-		for (int aux = 0; aux < x.length; aux++) { // esse length pega o valor que corresponde ao total das variaveis da
-													// matriz
-			System.out.println("Valor do indice " + aux + " = " + x[aux]); // aqui o "x" tá recebendo a matriz do aux
-		}
+		int[][] arrayBidirecional = new int[3][3]; // matriz com linha e coluna
+		
+		arrayBidirecional[0][0] = 8;
+		arrayBidirecional[2][1] = 7;
+		
 
-		// metodo matriz para string
-		String nome[] = { "nome1", "nome2", "nome3" };
-		for (int aux1 = 0; aux1 < nome.length; aux1++) {
-			System.out.println(nome[aux1]);
-			if (nome[aux1] == "nome3") { // caçando o numero da indice através da informação dentro dela
-				System.out.println("O indice é o : " + aux1);
+		for (int linha = 0; linha < arrayBidirecional.length; linha++) { // esse length v� a linha
+			for (int coluna = 0; coluna < arrayBidirecional[0].length; coluna++) { // o zero confere o tamanho do
+																					// segundo indice
+				System.out.print( // print sozinho deixa os valores um do lado do outro
+						"Indice [" + linha + "][" + coluna + "] = " + arrayBidirecional[linha][coluna] + " | ");
+
 			}
+			System.out.println(); 
 		}
-
-		int[] ArrayInt = new int[5];
-		String[] ArrayString = new String[4];
-		double[] ArrayDouble = new double[3];
-
-		ArrayInt[3] = 4;
-
-		int[] numero = new int[6];
-		Scanner teclado = new Scanner(System.in); // metodo "leia" 
-
-		for (int aux2 = 0; aux2 < numero.length; aux2++) {
-			System.out.println("Digite algum valor: ");
-			numero[aux2] = teclado.nextInt(); // vai ler a informação dada pelo usuario, vai ser gravados em posiçoes
-												// diferentes
-		}
-		for (int aux2 = 0; aux2 < numero.length; aux2++) {
-			System.out.println("Indice " + aux2 + " = " + numero[aux2]); // vai exibir as infos que foram guardadas na
-																			// matriz
-		} 
 	}
 }
