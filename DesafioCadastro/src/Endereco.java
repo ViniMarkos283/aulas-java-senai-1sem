@@ -14,7 +14,7 @@ public class Endereco {
 		return rua;
 	}
 
-	public void setRua(String rua) {
+	public void setRua() {
 		this.rua = rua;
 	}
 
@@ -22,7 +22,7 @@ public class Endereco {
 		return bairro;
 	}
 
-	public void setBairro(String bairro) {
+	public void setBairro() {
 		this.bairro = bairro;
 	}
 
@@ -30,7 +30,7 @@ public class Endereco {
 		return numero;
 	}
 
-	public void setNumero(int numero) {
+	public void setNumero() {
 		this.numero = numero;
 	}
 

@@ -10,7 +10,7 @@ public class Pessoa {
 		this.gen = gen;
 	}
 
-	private enum Genero {
+	private enum Sexo {
 		MASCULINO, FEMININO;
 	}
 
@@ -28,8 +28,8 @@ public class Pessoa {
 		this.idade = idade;
 	}
 
-	public static void SetEndereco(Endereco pessoa) {
-	
+	public static void SetEndereco(Endereco endereco) {
+		
 	}
 
 	@Override
