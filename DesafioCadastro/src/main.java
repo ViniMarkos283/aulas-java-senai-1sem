@@ -6,30 +6,37 @@ public class main {
 
 	public static void main(String[] args) {
 
-		Pessoa[] arrayPessoa = new Pessoa[4];
-		Endereco[] arrayEndereco = new Endereco[4];
+		Pessoa[] pessoa = new Pessoa[4];
+		Endereco[] endereco = new Endereco[4];
 		
 		Scanner teclado = new Scanner(System.in); 
 		
-		for (int x = 0; x > arrayPessoa.length; x++) {
+		for (int x = 0; x > pessoa.length; x++) {
 			System.out.println("Digite seu nome:");
-			arrayPessoa.length = teclado.nextLine();
+			pessoa[x].nome = teclado.nextLine();
 			
 			System.out.println("Digite sua idade:");
-			arrayPessoa. = teclado.nextInt();
-		for (int y = 0; y > arrayPessoa.length; y++) {
-			System.out.println("Digite seu nome:");
-			arrayEndereco[y] = teclado.nextLine();
+			pessoa[x].idade = teclado.nextInt();
 			
-			System.out.println("Digite sua idade:");
-			arrayEndereco[y] = teclado.nextInt();
+	}
+		for (int x = 0; x > pessoa.length; x++) {
+			System.out.println("Digite o nome da sua rua:");
+			endereco[x].rua = teclado.nextLine();
 			
-			for (int z = 0; z > arrayPessoa.length; z++) {
+			System.out.println("Digite o nome do seu bairro:");
+			endereco[x].bairro = teclado.nextLine();
+			
+			System.out.println("Digite o número da rua:");
+			endereco[x].numero = teclado.nextInt();
+			
+			for (int z = 0; z > pessoa.length; z++) {
 				System.out.println("Nome: " + ", Idade: " );
-		}}}
+			}
+
 		
-		for (Pessoa pessoa : pessoa) {
+		for (int x = 0; x > 4; x++) {
 			System.out.println(pessoa);
+		}
 		
 	
 	}
