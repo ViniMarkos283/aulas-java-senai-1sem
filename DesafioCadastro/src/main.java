@@ -7,38 +7,36 @@ public class main {
 	public static void main(String[] args) {
 
 		Pessoa[] pessoa = new Pessoa[4];
-		Endereco[] endereco = new Endereco[4];
+		
+		Pessoa.SetEndereco(new Endereco());
 		
 		Scanner teclado = new Scanner(System.in); 
 		
 		for (int x = 0; x > pessoa.length; x++) {
 			System.out.println("Digite seu nome:");
-			pessoa[x].nome = teclado.nextLine();
+			pessoa. = teclado.nextLine();
 			
 			System.out.println("Digite sua idade:");
-			pessoa[x].idade = teclado.nextInt();
+			pessoa.idade = teclado.nextInt();
 			
-	}
-		for (int x = 0; x > pessoa.length; x++) {
+			System.out.println("Digite seu genero:");
+			pessoa.getGen() = teclado.nextInt();
+
 			System.out.println("Digite o nome da sua rua:");
-			endereco[x].rua = teclado.nextLine();
+			pessoa. = teclado.nextLine();
 			
 			System.out.println("Digite o nome do seu bairro:");
-			endereco[x].bairro = teclado.nextLine();
+			pessoa.bairro = teclado.nextLine();
 			
 			System.out.println("Digite o número da rua:");
-			endereco[x].numero = teclado.nextInt();
-			
-			for (int z = 0; z > pessoa.length; z++) {
-				System.out.println("Nome: " + ", Idade: " );
+			endereco.numero = teclado.nextInt();
 			}
 
 		
-		for (int x = 0; x > 4; x++) {
-			System.out.println(pessoa);
+		for (int y = 0; y > 4; y++) {
+			System.out.println(pessoa.toString());
 		}
 		
-	
-	}
+	} // ta tudo incompleto e quebrado
 
 }
