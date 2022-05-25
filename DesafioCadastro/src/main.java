@@ -14,19 +14,19 @@ public class main {
 		
 		for (int x = 0; x > pessoa.length; x++) {
 			System.out.println("Digite seu nome:");
-			pessoa[x].setNome() = teclado.nextLine();
+			pessoa[x].setNome = teclado.nextLine();
 			
 			System.out.println("Digite sua idade:");
-			pessoa[x].setIdade(x); = teclado.nextInt();
+			pessoa[x].setIdade = teclado.nextInt();
 			
 			System.out.println("Digite seu genero:");
-			pessoa[x].setGen(x) = teclado.nextInt();
+			pessoa[x].setGen = teclado.next();
 
 			System.out.println("Digite o nome da sua rua:");
-			pessoa[x]. = teclado.nextLine();
+			pessoa[x].SetEndereco = teclado.nextLine();
 			
 			System.out.println("Digite o nome do seu bairro:");
-			pessoa[x].SetEndereco()= teclado.nextLine();
+			pessoa[x].SetEndereco = teclado.nextLine();
 			
 			System.out.println("Digite o número da rua:");
 			pessoa[x].numero = teclado.nextInt();

@@ -1,1 +1,3 @@
-texto para ser gravado no arquivo
+Sabonete [Nome=Asepxia, cheiro=forte, cor=Vermelho]
+Sabonete [Nome=Dove, cheiro=suave, cor=Branco]
+Sabonete [Nome=generico, cheiro=Amargo, cor=Amarelo]

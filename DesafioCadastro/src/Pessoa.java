@@ -1,35 +1,32 @@
 
 public class Pessoa {
 
-	private String nome;
-	private int idade;
-	
-	public Pessoa() {
-		this.nome = nome;
-		this.idade = idade;
-		this.gen = gen;
-	}
+	private static String nome;
+	private static int idade;
 
-	private enum Sexo {
+	private enum Genero {
 		MASCULINO, FEMININO;
+	
+
+	private static int gen;
+
+	public static void setGen(int Genero) {
+		gen = Genero;
 	}
 
-	private int gen;
-
-	public void setGen(int Genero) {
-		this.gen = gen;
+	public static void setNome() {
+		nome = nome;
 	}
 
-	public void setNome(String nome) {
-		this.nome = nome;
-	}
-
-	public void setIdade(int idade) {
-		this.idade = idade;
+	public static void setIdade() {
+		idade = idade;
 	}
 
 	public static void SetEndereco(Endereco endereco) {
-		
+		SetEndereco(endereco.getBairro());
+		SetEndereco(endereco.setNumero());
+		SetEndereco(endereco.setRua());
+
 	}
 
 	@Override

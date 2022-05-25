@@ -1,37 +1,31 @@
 
 public class Endereco {
 
-	private String rua, bairro;
-	private int numero;
-
-	public Endereco() {
-		this.rua = rua;
-		this.bairro = bairro;
-		this.numero = numero;
-	}
+	private static String rua, bairro;
+	private static int numero;
 
 	public String getRua() {
 		return rua;
 	}
 
-	public void setRua() {
-		this.rua = rua;
+	public static void setRua(String rua) {
+		rua = rua;
 	}
 
 	public String getBairro() {
 		return bairro;
 	}
 
-	public void setBairro() {
-		this.bairro = bairro;
+	public static void setBairro(String bairro) {
+		bairro = bairro;
 	}
 
 	public int getNumero() {
 		return numero;
 	}
 
-	public void setNumero() {
-		this.numero = numero;
+	public static void setNumero(int numero) {
+		numero = numero;
 	}
 
 	@Override
