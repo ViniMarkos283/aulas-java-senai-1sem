@@ -11,7 +11,7 @@ public class Sabonete {
 
 	@Override
 	public String toString() { // toString, converte varias strings em uma só
-		return "Sabonete: cheiro=" + cheiro + ", cor=" + cor + "]\n";
+		return "Sabonete: cheiro = " + cheiro + ", cor = " + cor + "\n";
 	}
 
 	public Sabonete(String texto) {

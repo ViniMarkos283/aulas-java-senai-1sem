@@ -10,9 +10,9 @@ public class main {
 		
 		String s = "texto para ser gravado no arquivo"; // string onde ficará o texto que vai pro "saida.txt"
 		
-		Sabonete sabonete1 = new Sabonete("Asepxia", "forte", "Vermelho"); //instancia dos sabonetes
-		Sabonete sabonete2 = new Sabonete("Dove", "suave", "Branco"); // aqui dá pra deixar as informacoes a respeito das strings, por causa dos parametros dentro do construtor na classe "sabonete"
-		Sabonete sabonete3 = new Sabonete("generico", "Amargo", "Amarelo");
+		Sabonete sabonete1 = new Sabonete("forte", "Vermelho"); //instancia dos sabonetes
+		Sabonete sabonete2 = new Sabonete("suave", "Branco"); // aqui dá pra deixar as informacoes a respeito das strings, por causa dos parametros dentro do construtor na classe "sabonete"
+		Sabonete sabonete3 = new Sabonete("Amargo", "Amarelo");
 		
 		List<Sabonete> listaDeSabonetes = new ArrayList<Sabonete>(); // ArrayList
 		
@@ -28,8 +28,9 @@ public class main {
 			 for(Sabonete sabonete : listaDeSabonetes) // enchanced for
 		escrever.write(sabonete.toString()); // string onde a informação será gravada
 		 }
-		
 		//dando refresh na pasta "src" faz aparecer o arquivo txt
+		 
+		 
 	}
 
 }

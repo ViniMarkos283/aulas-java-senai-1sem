@@ -16,8 +16,19 @@ public class main {
 				string += line + "\n"; // ele lê e soma com a string, e adiciona um pula linha
 			}
 			System.out.println(string);
-			
 		}
+		
+		
+		//metodo usando os parametros
+//		Sabonete sabonete1 = new  Sabonete("azedo", "verde");
+//		String s = sabonete1.toString();
+		
+		//metodo usando Strings
+		String teste = "Sabonete; cheiro = azedo, Cor = verde";
+		
+		Sabonete sabonete2 = new Sabonete(teste);
+		
+		System.out.println(sabonete2);
 		
 	}
 

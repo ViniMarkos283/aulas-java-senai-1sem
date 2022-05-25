@@ -1,5 +1,6 @@
 
 public class Sabonete {
+		//comanda: guardar os dados no txt e dps transforma-los novamente em variaveis por meio dos metodos de quebra
 
 	private String cheiro, cor;
 
@@ -11,7 +12,7 @@ public class Sabonete {
 
 	@Override
 	public String toString() { // toString, converte varias strings em uma só
-		return "Sabonete: cheiro=" + cheiro + ", cor=" + cor + "]\n";
+		return "Sabonete: cheiro=" + cheiro + ", cor=" + cor + "\n";
 	}
 
 	public Sabonete(String texto) {
@@ -27,3 +28,5 @@ public class Sabonete {
 	}
 
 }
+
+

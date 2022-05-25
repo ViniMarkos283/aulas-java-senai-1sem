@@ -1,0 +1,3 @@
+Sabonete: cheiro=forte, cor=Vermelho
+Sabonete: cheiro=suave, cor=Branco
+Sabonete: cheiro=Amargo, cor=Amarelo
