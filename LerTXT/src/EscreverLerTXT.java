@@ -9,28 +9,28 @@ public class EscreverLerTXT {
 
 	public static void main(String[] args) throws IOException {
 
-		String linha = "";
+		String linha = ""; //string onde vai o texto
 		String string = "\n";
 
 		Scanner teclado = new Scanner(System.in);
 
 		System.out.println("Digite um texto: ");
-		linha = teclado.nextLine();
+		linha = teclado.nextLine(); //scanner onde vai o que a pessoa digitar
 		
 		System.out.println("\nGravando no .txt... ");
 		
 		System.out.println("Lendo o .txt... ");
 
 		try (BufferedWriter escrever = new BufferedWriter(new FileWriter("saida.txt"))) {
-			escrever.write(linha);
+			escrever.write(linha); //escreve no saida.txt
 		}
 
-		try (BufferedReader reader = new BufferedReader(new FileReader("saida.txt"))) {
+		try (BufferedReader reader = new BufferedReader(new FileReader("saida.txt"))) { //lê o que está escrito no .txt
 
 			while ((linha = reader.readLine()) != null) {
-				string += linha + "\n";
+				string += linha + "\n"; //soma a linha com a string e coloca um \n
 			}
-			System.out.println(string);
+			System.out.println(string); //exibição do texto no console
 		}
 
 	}
