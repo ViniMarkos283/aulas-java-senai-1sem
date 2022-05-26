@@ -1,6 +1,7 @@
 
-public class Data {
+package calendario;
 
+public class Data {
 	public static final int FORMATO_12H = 1;
 	public static final int FORMATO_24H = 2;
 
@@ -11,70 +12,88 @@ public class Data {
 	private int minuto = -1;
 	private int segundo = -1;
 
-	public Data(int dia, int mes, int ano) {
-		this.dia = dia;
-		this.mes = mes;
-		this.ano = ano;
-	}
+// Construtor que recebe dia, mes e ano
+public Data(int dia, int mes, int ano) {
+	this.dia = dia;
+	this.mes = mes;
+	this.ano = ano;
+}
 
-	public Data(int dia, int mes, int ano, int hora, int minuto, int segundo) {
-		this(dia, mes, ano);
-		this.hora = hora;
-		this.minuto = minuto;
-		this.segundo = segundo;
-	}
+// Construtor completo, que recebe informa��es de data e hor�rio
+public Data(int dia, int mes, int ano, int hora, int minuto, int segundo) {
+	// Chama o outro construtor da classe
+	this (dia, mes, ano);
+	
+	this.hora = hora;
+	this.minuto = minuto;
+	this.segundo = segundo;
+}
 
-	public void imprimir(int formato) {
-		String data = dia + "/" + mes + "/" + ano;
-
-		if (hora == -1) {
-			System.out.println(data);
+// Imprime a data/hora formatada (de acordo com o formato especificado)
+public void imprimir(int formato) {
+	// Monta a string de impress�o de data
+	String data = dia + "/" + mes + "/" + ano;
+	
+	if (hora == -1) {
+		// Se hora for -1, significa que os dados de hor�rio n�o foram passado no construtor.
+		// Ent�o exibe s� a data
+		System.out.println(data);
+	} else {
+		// Monta parte da string da hor�rio (deixa a hora de fora por enquanto)
+		String horario = ":" + minuto + ":" + segundo;
+		
+		if (formato == FORMATO_24H) {
+			// Se o formato for 24h, concatena a hora no in�cio da string (o atributo j� foi
+			// fornecido no formato 24h)
+			horario = hora + horario;
 		} else {
-			String horario = ":" + minuto + ":" + segundo;
-
-			if (formato == FORMATO_24H) {
-				horario = hora + horario;
+			// Se o formato for 12h
+			if (hora == 0) {
+				horario = 12 + horario;
+				horario += " AM";
+			
+			} else if (hora >= 12) {
+				// Se hora for maior ou igual a 12, � preciso subtrair 12 da hora para obter 
+				// a hora no formato 12h, e concatena o "PM" no fim
+				horario = (hora - 12) + horario;
+				horario += " PM";
+			
 			} else {
-				if (hora == 0) {
-					horario = 12 + horario;
-					horario += " AM";
-				} else if (hora >= 12) {
-					horario = (hora - 12) + horario;
-					horario += " PM";
-				} else {
-					horario = hora + horario;
-					horario += " AM";
-				}
-
+				// Se a hora for menor que 12, simplesmente utiliza a pr�pria hora e concatena
+				// o "AM" no fim
+				horario = hora + horario;
+				horario += " AM";
 			}
-
-			System.out.println(data + " " + horario);
 		}
 
+		// Imprime a data/hora formatada
+		System.out.println(data + " " + horario);
 	}
+}
 
-	public int getDia() {
-		return dia;
-	}
+// M�todos getters
 
-	public int getMes() {
-		return mes;
-	}
+public int getDia() {
+	return dia;
+}
 
-	public int getAno() {
-		return ano;
-	}
+public int getMes() {
+	return mes;
+}
 
-	public int getHora() {
-		return hora;
-	}
+public int getAno() {
+	return ano;
+}
 
-	public int getMinuto() {
-		return minuto;
-	}
+public int getHora() {
+	return hora;
+}
 
-	public int getSegundo() {
-		return segundo;
-	}
+public int getMinuto() {
+	return minuto;
+}
 
+public int getSegundo() {
+	return segundo;
+}
 }
