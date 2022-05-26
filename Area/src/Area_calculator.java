@@ -7,27 +7,27 @@ public class Area_calculator {
 		Scanner scanner = new Scanner(System.in);
 		Calculos calculos = new Calculos();
 		
-		System.out.println("Calculadora area de formas:");
+		System.out.println("Calculadora area de formas:"); // syso padrao
 		System.out.println("digite a medida da largura: ");
-		int x = scanner.nextInt();
+		int x = scanner.nextInt(); //metodo scanner para a variavel x
 		
 		System.out.println("digite a medida da altura: ");
-		int y = scanner.nextInt();
+		int y = scanner.nextInt(); //metodo scanner para a variavel y
 		
 		
-		if(x == y) {
+		if(x == y) { // formula se e sen√£o
 		int area = calculos.area(x);
-				System.out.println("A area do seu quadrado È de: " + area + "cm");
+				System.out.println("A area do seu quadrado √© de: " + area + "cm");
 		}
 		
 		else if (x != y){
 		int area = calculos.area(x, y);
-				System.out.println("A area do seu retangulo È de: " + area + "cm");
+				System.out.println("A area do seu retangulo √© de: " + area + "cm");
 		}
 		
 		else if (x != int){
 		double area = calculos.area(x, y);
-				System.out.println("A area do seu triangulo È de: " + area + "cm");
+				System.out.println("A area do seu triangulo √© de: " + area + "cm");
 		}
 	}
 
