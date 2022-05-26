@@ -3,11 +3,11 @@ public class Contador {
 
 	private static int valor; //atributo
 	
-//	public Contador() { // faz começar com o 1
+//	public Contador() { // faz comeÃ§ar com o 1
 //		this.valor = 1;
 //	}
 	
-	static { // executa só na primeira vez 
+	static { // executa sÃ³ na primeira vez 
 		valor = 1;
 	}
 
@@ -15,11 +15,11 @@ public class Contador {
 		valor ++;
 	}
 
-	public static int getValor() { // captura valor
+	public static int getValor() { // retorna valor
 		return valor;
 	}
 
-	public void setValor(int valor) { // mostra valor
+	public void setValor(int valor) { // captura o valor
 		this.valor = valor;
 	}
 	
