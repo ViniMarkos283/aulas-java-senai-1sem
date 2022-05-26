@@ -10,10 +10,10 @@ public class CalculadoraTop {
 		String op = "";
 		int control = 0;
 		
-		Scanner entrada = new Scanner(System.in); // sintaxe do scanner, que pega as informaÁoes
+		Scanner entrada = new Scanner(System.in); // sintaxe do scanner, que pega as informa√ßoes
 		
-		System.out.println("Digite a operaÁ„o que deseja fazer ( +, -, *, /): ");
-		op = entrada.nextLine(); // coleta a informaÁ„o, È como se fosse um Leia
+		System.out.println("Digite a opera√ß√£o que deseja fazer ( +, -, *, /): ");
+		op = entrada.nextLine(); // coleta a informa√ß√£o, √© como se fosse um Leia
 		
 		System.out.println("Digite um valor: ");
 		n1 = Integer.parseInt(entrada.nextLine()); // passa o valor para inteiro
@@ -21,24 +21,24 @@ public class CalculadoraTop {
 		System.out.println("Digite outro valor: ");
 		n2 = Integer.parseInt(entrada.nextLine());
 		
-		if(op.equals("+")) { // If È o "Se"
-			System.out.println("O resultado da soma È: "+ (n1 + n2));
+		if(op.equals("+")) { // If √© o "Se" que muda o metodo de acordo com o sinal fornecido
+			System.out.println("O resultado da soma √©: "+ (n1 + n2));
 			control++;
 		}
 		if(op.equals("-")) {
-			System.out.println("O resultado da subtraÁ„o È: "+ (n1 - n2));
+			System.out.println("O resultado da subtra√ß√£o √©: "+ (n1 - n2));
 			control++;
 		}
 		if(op.equals("*")) { 
-			System.out.println("O resultado da multiplicaÁ„o È: "+ (n1 * n2));
+			System.out.println("O resultado da multiplica√ß√£o √©: "+ (n1 * n2));
 			control++;
 		}
 		if(op.equals("/")) { 
-			System.out.println("O resultado da divis„o È: "+ (n1 / n2));
+			System.out.println("O resultado da divis√£o √©: "+ (n1 / n2));
 			control++;
 		}
 		if(control == 0) {
-			System.out.println("OperaÁ„o inv·lida, Tente Novamente ");
+			System.out.println("Opera√ß√£o inv√°lida, Tente Novamente ");
 		}
 
 	}
