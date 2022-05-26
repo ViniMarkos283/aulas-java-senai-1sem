@@ -3,9 +3,9 @@ public class Aplicacao {
 
 	public static void main(String[] args) {
 
-		Veiculo veiculo = new Veiculo();
+		Veiculo veiculo = new Veiculo(); // instancia do veiculo
 
-		veiculo.setMarca("Fiat");
+		veiculo.setMarca("Fiat"); //atribuiçoes ao veiculo via metodo set
 		veiculo.setModelo("UNO");
 		veiculo.setAno(2012);
 
@@ -14,7 +14,7 @@ public class Aplicacao {
 
 		Carro carro = new Carro();
 
-		carro.setMarca("n�o lembro ;-;"); // caracteristicas da super
+		carro.setMarca("não lembro ;-;"); // caracteristicas da super
 		carro.setModelo("Sandero");
 		carro.setAno(2015);
 		carro.setQuatroPortas(true); // caracteristica da subclasse
