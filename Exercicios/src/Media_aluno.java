@@ -1,5 +1,5 @@
 
-public class Média_aluno {
+public class Media_aluno{
 
 	public static void main(String[] args) {
 		double nota1;
@@ -11,21 +11,22 @@ public class Média_aluno {
 		nota2 = 7.5;
 		nota3 = 6.0;
 		
-		System.out.println("Calculo de Média:");
+		System.out.println("Calculo de Mï¿½dia:");
 		System.out.println("nota 1: " + nota1);
 		System.out.println("nota 2: " + nota2);
 		System.out.println("nota 3: " + nota3);
 		System.out.println("");
-		System.out.println("gerando média...");
+		System.out.println("gerando mï¿½dia...");
 		System.out.println("");
 		
 		media = nota1 + nota2 + nota3;
 		
-		System.out.println("Sua média gerada foi de: ");
+		System.out.println("Sua mï¿½dia gerada foi de: ");
 		System.out.println(media / 3);
 		
 		
 
 	}
-
 }
+
+

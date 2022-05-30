@@ -28,7 +28,7 @@ public class main {
 			System.out.println("Digite o nome do seu bairro:");
 			pessoa[x].SetEndereco = teclado.nextLine();
 			
-			System.out.println("Digite o número da rua:");
+			System.out.println("Digite o nï¿½mero da rua:");
 			pessoa[x].numero = teclado.nextInt();
 			}
 

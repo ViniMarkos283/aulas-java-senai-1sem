@@ -23,9 +23,6 @@ public class Pessoa {
 	}
 
 	public static void SetEndereco(Endereco endereco) {
-		SetEndereco(endereco.getBairro());
-		SetEndereco(endereco.setNumero());
-		SetEndereco(endereco.setRua());
 
 	}
 
@@ -36,6 +33,6 @@ public class Pessoa {
 	
 	
 	
-	
+	}
 
 }
