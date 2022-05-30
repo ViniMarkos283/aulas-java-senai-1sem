@@ -25,12 +25,12 @@ public class EscreverLerTXT {
 			escrever.write(linha); //escreve no saida.txt
 		}
 
-		try (BufferedReader reader = new BufferedReader(new FileReader("saida.txt"))) { //lê o que está escrito no .txt
+		try (BufferedReader reader = new BufferedReader(new FileReader("saida.txt"))) { //le o que esta escrito no .txt
 
 			while ((linha = reader.readLine()) != null) {
 				string += linha + "\n"; //soma a linha com a string e coloca um \n
 			}
-			System.out.println(string); //exibição do texto no console
+			System.out.println(string); //exibicao do texto no console
 		}
 
 	}

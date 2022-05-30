@@ -11,7 +11,7 @@ public class main {
 	public static void main(String[] args) throws IOException {
 
 		Sabonete sabonete1 = new Sabonete("forte", "Vermelho");
-		Sabonete sabonete2 = new Sabonete("suave", "Branco");
+		Sabonete sabonete2 = new Sabonete("suave", "Azul");
 		Sabonete sabonete3 = new Sabonete("Amargo", "Amarelo");
 
 		List<Sabonete> listaDeSabonetes = new ArrayList<Sabonete>();
@@ -21,28 +21,24 @@ public class main {
 		listaDeSabonetes.add(sabonete3);
 
 		try (BufferedWriter escrever = new BufferedWriter(new FileWriter("listaDeSabonetes.txt"))) {
-
 			for (Sabonete sabonete : listaDeSabonetes)
 				escrever.write(sabonete.toString());
 		}
 
-		try(BufferedReader reader = new BufferedReader(new FileReader("entrada.txt"))){
+		List<Sabonete> sabonetesLidos = new ArrayList<Sabonete>();
+		try (BufferedReader reader = new BufferedReader(new FileReader("listaDeSabonetes.txt"))) {
+
 			String line;
-			String string = "";
-			
-			while((line = reader.readLine()) != null) { 
-				string += line + "\n"; 
+			String text = "";
+
+			while ((line = reader.readLine()) != null) {
+				text += line;
+				sabonetesLidos.add(sabonete);
+				
 			}
-			System.out.println(string);
-		}
-		
-		
-		String teste = "";
-		
-		Sabonete sabonete = new Sabonete(teste);
-		
-		System.out.println(sabonete);
 
+			System.out.println(sabonetesLidos);
+
+		} // terminar em casa !!!
 	}
-
 }

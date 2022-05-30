@@ -4,30 +4,31 @@ public class Pessoa {
 	private static String nome;
 	private static int idade;
 
-	private enum Genero {
-		MASCULINO, FEMININO;
+	private static int gen;
 
-		private static int gen;
+	public static String getNome() {
+		return nome;
+	}
 
-		public static void setNome(Pessoa nome) {
-			nome = nome;
-		}
+	public static void setNome(String nome) {
+		Pessoa.nome = nome;
+	}
 
-		public static void setGen(int gen) {
-			Genero.gen = gen;
-		}
+	public static int getIdade() {
+		return idade;
+	}
 
-		public static void SetEndereco(Endereco endereco) {
-			endereco.getNumero();
-			endereco.getBairro();
-			endereco.getRua();
-		}
+	public static void setIdade(int idade) {
+		Pessoa.idade = idade;
+	}
 
-		@Override
-		public String toString() {
-			return "Pessoa [nome=" + nome + ", idade=" + idade + ", genero =" + gen + "]";
-		}
+	@Override
+	public String toString() {
+		return "Pessoa [nome=" + nome + ", idade=" + idade + ", genero =" + gen + "]";
+	}
 
+	public static void setEndereco(Endereco endereco) {
+		
 	}
 
 }
