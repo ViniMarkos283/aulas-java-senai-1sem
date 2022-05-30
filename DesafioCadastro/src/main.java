@@ -8,13 +8,13 @@ public class main {
 
 		Pessoa[] pessoa = new Pessoa[4];
 		
-		Pessoa.SetEndereco(new Endereco());
+		Pessoa.setEndereco(new Endereco());
 		
 		Scanner teclado = new Scanner(System.in); 
 		
 		for (int x = 0; x > pessoa.length; x++) {
 			System.out.println("Digite seu nome:");
-			pessoa[x].setNome = teclado.nextLine();
+			pessoa[x]. = teclado.nextLine();
 			
 			System.out.println("Digite sua idade:");
 			pessoa[x].setIdade = teclado.nextInt();

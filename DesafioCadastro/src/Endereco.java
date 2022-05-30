@@ -9,7 +9,7 @@ public class Endereco {
 	}
 
 	public static void setRua(String rua) {
-		rua = rua;
+		Endereco.rua = rua;
 	}
 
 	public String getBairro() {
@@ -17,7 +17,7 @@ public class Endereco {
 	}
 
 	public static void setBairro(String bairro) {
-		bairro = bairro;
+		Endereco.bairro = bairro;
 	}
 
 	public int getNumero() {
@@ -25,14 +25,12 @@ public class Endereco {
 	}
 
 	public static void setNumero(int numero) {
-		numero = numero;
+		Endereco.numero = numero;
 	}
 
 	@Override
 	public String toString() {
 		return "Endereco [rua=" + rua + ", bairro=" + bairro + ", numero=" + numero + "]";
 	}
-	
-	
 
 }
