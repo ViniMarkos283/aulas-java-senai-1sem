@@ -10,8 +10,6 @@ public class main {
 
 	public static void main(String[] args) throws IOException {
 
-		String s = "texto para ser gravado no arquivo";
-
 		Sabonete sabonete1 = new Sabonete("forte", "Vermelho");
 		Sabonete sabonete2 = new Sabonete("suave", "Branco");
 		Sabonete sabonete3 = new Sabonete("Amargo", "Amarelo");

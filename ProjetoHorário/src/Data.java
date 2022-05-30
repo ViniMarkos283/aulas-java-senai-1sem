@@ -1,5 +1,4 @@
 
-package calendario;
 
 public class Data {
 	public static final int FORMATO_12H = 1;
