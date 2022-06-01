@@ -5,9 +5,9 @@ public class Sabonete {
 
 	private String cheiro, cor;
 
-	public Sabonete(String cheiro, String cor) { // () = construtor, � importante deixar os parametos com as informa�oes
+	public Sabonete(String cheiro, String cor) { // () = construtor, e importante deixar os parametos com as informacoes
 													// para
-													// que de para preenche-las no main
+													// que de possam preenche-las no main
 		this.cheiro = cheiro;
 		this.cor = cor;
 	}
@@ -19,7 +19,7 @@ public class Sabonete {
 
 	public Sabonete(String texto) {
 
-		String[] arrayAuxiliar1 = texto.split(","); // o split localiza o caractere informado e quebra os espa�os entre
+		String[] arrayAuxiliar1 = texto.split(","); // o split localiza o caractere informado e quebra os espacos entre
 													// esse caractere, e os armazena em variaveis
 		String[] arrayAuxiliar2 = arrayAuxiliar1[0].split("="); // separacao split usando o =
 		this.cheiro = arrayAuxiliar2[1].trim(); // o trim localiza e apaga os espacos na variavel que foi pega no texto
@@ -28,5 +28,5 @@ public class Sabonete {
 		this.cor = arrayAuxiliar3[1].trim();
 
 	}
-	
+
 }
