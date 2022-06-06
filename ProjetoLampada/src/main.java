@@ -10,7 +10,7 @@ public class main {
 	
 		while (lamp.escolha == 2) {
 		if (lamp.estado = true) {
-		System.out.println("lampada encontrada, mas está ligada, o que deseja fazer?");
+		System.out.println("lampada encontrada, mas estï¿½ ligada, o que deseja fazer?");
 		System.out.println("0 - desligar");
 		System.out.println("2 - sair");
 
@@ -18,7 +18,7 @@ public class main {
 		}
 		
 		else if (lamp.estado = false) {
-				System.out.println("lampada encontrada, mas está desligada, o que deseja fazer?");
+				System.out.println("lampada encontrada, mas estï¿½ desligada, o que deseja fazer?");
 				System.out.println("1 - ligar");
 				
 				int escolher = entrada.nextInt();
@@ -34,7 +34,7 @@ public class main {
 		break;
 	}
 	}
-}
+} // preciso arrumar, ainda n ta funcionando
 
 	
 		
