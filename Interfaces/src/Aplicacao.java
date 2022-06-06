@@ -1,5 +1,5 @@
 
-public class Aplicacao { //interfaces só possuem metodos
+public class Aplicacao { //interfaces so possuem metodos
 
 	public static void main(String[] args) {
 
@@ -9,7 +9,7 @@ public class Aplicacao { //interfaces só possuem metodos
 //		Fusca fusca = new Fusca(); // instancia do fusca
 //		
 //		rota.Ir(fusca); // mesma rota mas agr com o fusca
-//		rota.Ir(ferrari); // chamou o veiculo para funcionar na rota, isso é um meio de polimorfismo
+//		rota.Ir(ferrari); // chamou o veiculo para funcionar na rota, isso ï¿½ um meio de polimorfismo
 //		
 //		Automovel automovel = new Ferrari(); // metodo alternativo
 //		rota.Ir(automovel);
