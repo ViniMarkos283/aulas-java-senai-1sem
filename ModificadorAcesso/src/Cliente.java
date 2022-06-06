@@ -45,18 +45,18 @@ public class Cliente {
 	// gerado pelo source > toString
 	@Override // significa sobrescrita, le a classe filho ao inves do pai
 	public String toString() {
-		return "Cliente: \n nome = " + nome + ", \n CPF = " + cpf + ", \n Nmero da conta = " + numConta + "\n *********************************";
+		return "Cliente: \n nome = " + nome + ", \n CPF = " + cpf + ", \n Numero da conta = " + numConta + "\n *********************************";
 	}
 
 	
 	//gerado pelo hashcode e equal
 	@Override
-	public int hashCode() {
+	public int hashCode() { // o hashcode retorna um inteiro informando a localizacao da informacao desejada
 		return Objects.hash(cpf, nome, numConta);
 	}
 
 	@Override
-	public boolean equals(Object obj) {
+	public boolean equals(Object obj) { // o equals faz a comparacao
 		if (this == obj)
 			return true;
 		if (obj == null)
@@ -64,7 +64,7 @@ public class Cliente {
 		if (getClass() != obj.getClass())
 			return false;
 		Cliente other = (Cliente) obj;
-		return cpf == other.cpf && Objects.equals(nome, other.nome) && numConta == other.numConta; // Esse && é o E, precisa atingir as três condicoes para dar true.
+		return cpf == other.cpf && Objects.equals(nome, other.nome) && numConta == other.numConta; // Esse && e o E, precisa atingir as tres condicoes para dar true.
 	}
 	
 	
