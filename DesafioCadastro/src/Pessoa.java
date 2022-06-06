@@ -48,7 +48,7 @@ public class Pessoa {
 		String[] arrayAuxiliar4 = arrayAuxiliar1[2].split("=");
 		this.sexo = Sexo.valueOf(arrayAuxiliar4[1].trim());
 
-		Endereco endereco = new Endereco();
+		Endereco endereco = new Endereco(); // responsavel por puxar os metodos do Endereco pra ca
 		this.endereco = endereco;
 
 	}
