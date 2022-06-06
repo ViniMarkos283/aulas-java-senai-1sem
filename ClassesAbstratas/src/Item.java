@@ -1,8 +1,8 @@
 
-public abstract class Item { // classe abstrata, carrega em si o padrão para as subclasses usarem
+public abstract class Item { // classe abstrata, carrega em si o padrao para as subclasses usarem
 	
-	private int posX; // posiçao X
-	private int posY; // posiçao Y
+	private int posX; // posiï¿½ao X
+	private int posY; // posiï¿½ao Y
 	
 	public abstract void pegar() ; // metodo abstrato, acaba com ";" e obriga as sub classes a criarem implementacoes
 
