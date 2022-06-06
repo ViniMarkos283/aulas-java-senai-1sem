@@ -13,7 +13,7 @@ public class Bebida {
 	}
 
 	public void preparar() {
-		System.out.println("pegando um copo..."); // esse cara dá a instrução do copo pros outros 2
+		System.out.println("pegando um copo..."); // esse cara da a instrucao do copo pros outros 2
 
 	}
 

@@ -5,13 +5,13 @@ public class Preparador {
 	public void prepararbebida(Bebida bebida) {
 		System.out.println("Preparando a bebida: " + bebida.getNome());
 
-		if (bebida.isAquecer()) { // metodo aquecedor em booleano, se vai ou não aquecer
+		if (bebida.isAquecer()) { // metodo aquecedor em booleano, se vai ou nï¿½o aquecer
 			System.out.println("Aquecendo a bebida: " + bebida.getNome());
 		}
 		
-		bebida.preparar(); // metodo que descreve a preparação das bebidas
+		bebida.preparar(); // metodo que descreve a preparacao das bebidas
 		
-		System.out.println("Colocando o " + bebida.getNome() + " no copo"); // economia de codigo, aqui já fala q a bebida foi pro copo
+		System.out.println("Colocando o " + bebida.getNome() + " no copo"); // economia de codigo, aqui ja fala q a bebida foi pro copo
 
 		System.out.println("Seu " + bebida.getNome() + " foi preparado com sucesso!!! \n");
 
