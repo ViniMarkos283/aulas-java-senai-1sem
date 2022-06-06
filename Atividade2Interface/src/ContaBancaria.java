@@ -2,10 +2,11 @@
 public class ContaBancaria {
 	protected double saldo;
 	
-	public void calcularSaldo() {
+	public void calcularSaldo() { // metodo obrigatorio nas subclasses
 		
 	}
 
+	//metodos acessiveis para as classes vinculadas com a principal, tanto a correste quanto a investimento tem acesso a estes metodos
 	public void depositar(double saldo) {
 		this.saldo = saldo;
 	}
