@@ -39,17 +39,17 @@ public class main {
 				} else if (opcao == 2) {
 					pessoa.setGen(Sexo.FEMININO);
 				} else {
-					System.out.println("Opção inválida");
+					System.out.println("Opï¿½ï¿½o invï¿½lida");
 					System.out.println("Digite seu genero: 1 = Masculino, 2 = Feminino: ");
 				}
 			}
 
 			System.out.println("Digite o nome da sua rua:");
-			pessoa.setEndereco();
+			pessoa.setEndereco().;
 
 			System.out.println("Digite o nome do seu bairro:");
 
-			System.out.println("Digite o número da rua:");
+			System.out.println("Digite o nï¿½mero da rua:");
 
 		}
 

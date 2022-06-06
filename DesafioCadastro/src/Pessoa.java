@@ -4,18 +4,17 @@ public class Pessoa {
 	private static String nome;
 	private static int idade;
 	Endereco Endereco;
+	private Sexo gen;
 
 	private enum Sexo {
 		MASCULINO, FEMININO;
 	}
 
-	private int gen;
-
-	public int getGen() {
+	public Sexo getGen() {
 		return gen;
 	}
 
-	public void setGen(int gen) {
+	public void setGen(Sexo gen) {
 		this.gen = gen;
 	}
 
@@ -60,7 +59,11 @@ public class Pessoa {
 	}
 
 	public void setEndereco(Endereco endereco) {
-		this.Endereco = endereco;
+		this.Endereco = Endereco;
+	}
+	
+	public getEndereco() {
+	return Endereco;
 	}
 
 // "value of" converte string para enum 
