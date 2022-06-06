@@ -8,15 +8,15 @@ public class main {
 
 	public static void main(String[] args) throws IOException { // erro caso de errado
 		
-		String s = "texto para ser gravado no arquivo"; // string onde ficará o texto que vai pro "saida.txt"
+		String s = "texto para ser gravado no arquivo"; // string onde ficarï¿½ o texto que vai pro "saida.txt"
 		
 		Sabonete sabonete1 = new Sabonete("forte", "Vermelho"); //instancia dos sabonetes
-		Sabonete sabonete2 = new Sabonete("suave", "Branco"); // aqui dá pra deixar as informacoes a respeito das strings, por causa dos parametros dentro do construtor na classe "sabonete"
+		Sabonete sabonete2 = new Sabonete("suave", "Branco"); // aqui da pra deixar as informacoes a respeito das strings, por causa dos parametros dentro do construtor na classe "sabonete"
 		Sabonete sabonete3 = new Sabonete("Amargo", "Amarelo");
 		
 		List<Sabonete> listaDeSabonetes = new ArrayList<Sabonete>(); // ArrayList
 		
-		listaDeSabonetes.add(sabonete1); //adição das variaveis dentro da lista
+		listaDeSabonetes.add(sabonete1); //adicao das variaveis dentro da lista
 		listaDeSabonetes.add(sabonete2);
 		listaDeSabonetes.add(sabonete3);
 		
@@ -26,7 +26,7 @@ public class main {
 			 //o writter escreve
 		
 			 for(Sabonete sabonete : listaDeSabonetes) // enchanced for
-		escrever.write(sabonete.toString()); // string onde a informação será gravada
+		escrever.write(sabonete.toString()); // string onde a informacao sera gravada
 		 }
 		//dando refresh na pasta "src" faz aparecer o arquivo txt
 		 
