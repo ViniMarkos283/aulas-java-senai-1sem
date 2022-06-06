@@ -1,5 +1,5 @@
 
-public class Endereco {
+public class Endereco extends Pessoa {
 
 	private static String rua, bairro;
 	private static int numero;
@@ -8,24 +8,24 @@ public class Endereco {
 		return rua;
 	}
 
-	public static void setRua(String rua) {
-		Endereco.rua = rua;
+	public void setRua(String rua) {
+		this.rua = rua;
 	}
 
 	public String getBairro() {
 		return bairro;
 	}
 
-	public static void setBairro(String bairro) {
-		Endereco.bairro = bairro;
+	public void setBairro(String bairro) {
+		this.bairro = bairro;
 	}
 
 	public int getNumero() {
 		return numero;
 	}
 
-	public static void setNumero(int numero) {
-		Endereco.numero = numero;
+	public void setNumero(int numero) {
+		this.numero = numero;
 	}
 
 	@Override
@@ -45,5 +45,9 @@ public class Endereco {
 
 		String[] arrayAuxiliar4 = arrayAuxiliar1[2].split("=");
 		this.bairro = arrayAuxiliar4[1].trim();
+	}
+
+	public Endereco() {
+		
 	}
 }
