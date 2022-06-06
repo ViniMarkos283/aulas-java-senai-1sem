@@ -3,11 +3,11 @@ public class Cachorro extends Animal { // subclasse da classe Animal
 
 	@Override
 	public void Falar() {
-		System.out.println("whaw! whaw!"); // subscrita do falar, o cachorro latirá
+		System.out.println("whaw! whaw!"); // subscrita do falar, o cachorro latirï¿½
 	}
 
 	public void Morder() {
-		System.out.println("* Mordendo seu pé *"); // metodo exclusivo dessa subclasse, somente o cachorro poderá morder
+		System.out.println("* Mordendo seu pe *"); // metodo exclusivo dessa subclasse, somente o cachorro podera morder
 	}
 	
 	
