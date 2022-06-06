@@ -2,7 +2,7 @@
 public class Veiculo {
 
 	private String nome;
-	protected String marca; // o protect deixa visivel só pras subclasses
+	protected String marca; // o protect deixa visivel so pras subclasses
 	protected String modelo;
 	protected int ano;
 	

@@ -12,7 +12,7 @@ public class Carro extends Veiculo{ // acessa a superclasse
 		super.imprimir(); // o super executa o imprimir da super class e dps roda o da sub
 	}
 
-	public boolean isQuatroPortas() { // o is é uma pergunta pra saber se é ou não
+	public boolean isQuatroPortas() { // o is e uma pergunta pra saber se e ou nao
 		return quatroPortas;
 	}
 

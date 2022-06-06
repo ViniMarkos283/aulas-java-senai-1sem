@@ -37,7 +37,7 @@ public class Aplicacao {
 		
 		Moto moto = new Moto();
 		
-		moto.setMarca("Honda"); // copiei msm
+		moto.setMarca("Honda");
 		moto.setModelo("titan");
 		moto.setAno(2010);
 		
