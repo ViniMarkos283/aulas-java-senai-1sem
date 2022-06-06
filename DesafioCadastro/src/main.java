@@ -15,48 +15,52 @@ public class main {
 		// seus dados pessoais e de endereco, usando matriz
 		// depois gravar no txt e depois jogar em um novo list
 
-		int opcao = 0;
-
 		List<Pessoa> pessoasList = new ArrayList<Pessoa>();
 		Scanner teclado = new Scanner(System.in);
 
-		for (int x = 0; x > pessoasList.size(); x++) {
+		for (int x = 0; x < 4; x++) {
 			Pessoa pessoa = new Pessoa();
 			pessoa.setEndereco(new Endereco());
 
 			System.out.println("Digite seu nome:");
-			pessoa.setNome(teclado.nextLine());
+			pessoa.setNome(teclado.next());
 
 			System.out.println("Digite sua idade:");
 			pessoa.setIdade(teclado.nextInt());
 
-			System.out.println("Digite seu genero: 1 = Masculino, 2 = Feminino: ");
-			opcao = teclado.nextInt();
+			int opcao = 0;
 
-			while (opcao != 1 || opcao != 2) {
+			while (opcao != 1 && opcao != 2) {
+				System.out.println("Digite seu genero: 1 = Masculino, 2 = Feminino: ");
+				opcao = teclado.nextInt();
+
 				if (opcao == 1) {
-					pessoa.setGen(Sexo.MASCULINO);
+					pessoa.setSexo(Sexo.MASCULINO);
 				} else if (opcao == 2) {
-					pessoa.setGen(Sexo.FEMININO);
+					pessoa.setSexo(Sexo.FEMININO);
 				} else {
-					System.out.println("Op��o inv�lida");
-					System.out.println("Digite seu genero: 1 = Masculino, 2 = Feminino: ");
+					System.out.println("Opcao invalida, meu nobre");
 				}
 			}
 
 			System.out.println("Digite o nome da sua rua:");
-			pessoa.setEndereco().;
+			pessoa.getEndereco().setRua(teclado.next());
 
 			System.out.println("Digite o nome do seu bairro:");
+			pessoa.getEndereco().setBairro(teclado.next());
 
-			System.out.println("Digite o n�mero da rua:");
+			System.out.println("Digite o numero da rua:");
+			pessoa.getEndereco().setNumero(teclado.nextInt());
+
+			pessoasList.add(pessoa);
 
 		}
 
 		try (BufferedWriter escrever = new BufferedWriter(new FileWriter("cadastros.txt"))) {
 
-			for (Pessoa cadastrados : pessoasList)
-				escrever.write(cadastrados.toString());
+			for (Pessoa pessoa : pessoasList) {
+				escrever.write(pessoa.toString());
+			}
 		}
 
 		List<String> cadastrosLidos = new ArrayList<String>();
@@ -69,10 +73,9 @@ public class main {
 				cadastrosLidos.add(pessoa.toString());
 
 			}
-
-			System.out.println(cadastrosLidos);
-
 		}
+
+		System.out.println(cadastrosLidos);
 
 	}
 }

@@ -1,5 +1,5 @@
 
-public class Endereco extends Pessoa {
+public class Endereco {
 
 	private static String rua, bairro;
 	private static int numero;
@@ -30,7 +30,7 @@ public class Endereco extends Pessoa {
 
 	@Override
 	public String toString() {
-		return "Endereco [rua=" + rua + ", bairro=" + bairro + ", numero=" + numero + "]";
+		return "Endereco [rua=" + rua + ", bairro = " + bairro + ", numero = " + numero + "]";
 	}
 
 	public Endereco(String texto) {
@@ -48,6 +48,6 @@ public class Endereco extends Pessoa {
 	}
 
 	public Endereco() {
-		
 	}
+
 }

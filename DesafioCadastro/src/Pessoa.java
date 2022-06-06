@@ -1,42 +1,38 @@
 
 public class Pessoa {
 
-	private static String nome;
-	private static int idade;
-	Endereco Endereco;
-	private Sexo gen;
+	private String nome;
+	private int idade;
+	private Sexo sexo;
+	Endereco endereco;
 
-	private enum Sexo {
-		MASCULINO, FEMININO;
+	public Sexo getSexo() {
+		return sexo;
 	}
 
-	public Sexo getGen() {
-		return gen;
+	public void setSexo(Sexo sexo) {
+		this.sexo = sexo;
 	}
 
-	public void setGen(Sexo gen) {
-		this.gen = gen;
-	}
-
-	public static String getNome() {
+	public String getNome() {
 		return nome;
 	}
 
-	public static void setNome(String nome) {
-		Pessoa.nome = nome;
+	public void setNome(String nome) {
+		this.nome = nome;
 	}
 
-	public static int getIdade() {
+	public int getIdade() {
 		return idade;
 	}
 
-	public static void setIdade(int idade) {
-		Pessoa.idade = idade;
+	public void setIdade(int idade) {
+		this.idade = idade;
 	}
 
 	@Override
 	public String toString() {
-		return "Pessoa [nome = " + nome + ", idade = " + idade + ", genero = " + " ]";
+		return "Pessoa [ nome = " + nome + ", idade=" + idade + ", sexo = " + sexo + ", endereco = " + endereco + "]\n";
 	}
 
 	public Pessoa(String texto) {
@@ -49,8 +45,11 @@ public class Pessoa {
 		String[] arrayAuxiliar3 = arrayAuxiliar1[1].split("=");
 		this.idade = Integer.parseInt(arrayAuxiliar3[1].trim());
 
-		String[] arrayAuxiliar4 = arrayAuxiliar1[1].split("=");
-		this.gen(Sexo.valueOf(arrayAuxiliar4[1].trim()));
+		String[] arrayAuxiliar4 = arrayAuxiliar1[2].split("=");
+		this.sexo = Sexo.valueOf(arrayAuxiliar4[1].trim());
+
+		Endereco endereco = new Endereco();
+		this.endereco = endereco;
 
 	}
 
@@ -58,12 +57,12 @@ public class Pessoa {
 
 	}
 
-	public void setEndereco(Endereco endereco) {
-		this.Endereco = Endereco;
+	public Endereco setEndereco(Endereco endereco) {
+		return this.endereco = endereco;
 	}
-	
-	public getEndereco() {
-	return Endereco;
+
+	public Endereco getEndereco() {
+		return endereco;
 	}
 
 // "value of" converte string para enum 

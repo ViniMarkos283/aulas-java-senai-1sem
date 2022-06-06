@@ -1,1 +1,4 @@
-Pessoa [nome = null, idade = 0, genero =  ]Pessoa [nome = null, idade = 0, genero =  ]Pessoa [nome = null, idade = 0, genero =  ]Pessoa [nome = null, idade = 0, genero =  ]
+Pessoa [ nome = jose, idade=1, sexo = MASCULINO, endereco = Endereco [rua=1, bairro = 1, numero = 1]]
+Pessoa [ nome = kleiton, idade=1, sexo = MASCULINO, endereco = Endereco [rua=1, bairro = 1, numero = 1]]
+Pessoa [ nome = junin, idade=1, sexo = MASCULINO, endereco = Endereco [rua=1, bairro = 1, numero = 1]]
+Pessoa [ nome = klebinho, idade=1, sexo = MASCULINO, endereco = Endereco [rua=1, bairro = 1, numero = 1]]

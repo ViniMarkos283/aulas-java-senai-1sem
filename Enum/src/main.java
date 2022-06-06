@@ -9,19 +9,19 @@ public class main {
 
 	public static void main(String[] args) {
 		
-		double pi = main.PI; // convocação da constante estatica
+		double pi = main.PI; // convocacao da constante estatica
 		
 		DiaDaSemana hoje = DiaDaSemana.SEGUNDA; // chama a constante dos dias da semana
 		int num = DiaDaSemana.SEGUNDA.getNum(); //captura do valor dentro de segunda
 		
-		System.out.println(num); // exibição do valor acima
+		System.out.println(num); // exibicao do valor acima
 		
 		String s = "TERCA";
 		hoje = DiaDaSemana.valueOf(s); // conversao da string para constante, comparando e achando o resultado mais proximo existente ao que foi informado
 		
 		System.out.println(hoje.getNum()); // ver o valor dentro do "hoje"
 		
-		Sexo sexo = Sexo.FEMININO; // esse enum só recebe os dois valores criados apenas
+		Sexo sexo = Sexo.FEMININO; // esse enum sï¿½ recebe os dois valores criados apenas
 		sexo = Sexo.MASCULINO;
 	}
 
