@@ -4,7 +4,7 @@ public class main {
 	public static final double PI = 3.14; // constante para Pi
 	
 	private enum Sexo { // abriu um enum dentro do main, da msm forma que a versao separada
-		MASCULINO, FEMININO;
+		MASCULINO, FEMININO; //constantes, somente em maiusculas
 	}
 
 	public static void main(String[] args) {
