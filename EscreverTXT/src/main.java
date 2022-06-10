@@ -25,7 +25,7 @@ public class main {
 			 //o buffered trata-se de uma memoria temporaria
 			 //o writter escreve
 		
-			 for(Sabonete sabonete : listaDeSabonetes) // enhanced for
+			 for(Sabonete sabonete : listaDeSabonetes) // enhanced for, ele meio que junta todos os itens da lista e faz com todos possam ser usados por uma unica variavel, util dms
 		escrever.write(sabonete.toString()); // string onde a informacao sera gravada
 		 }
 		//dando refresh na pasta "src" faz aparecer o arquivo txt
