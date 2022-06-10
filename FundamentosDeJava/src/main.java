@@ -10,8 +10,8 @@ public class main {
 		// double b = 0;
 		// short z = (short) 10000;
 
-		// a = (int)y; // converte o double em int, senão perde informações //
-		// b = x; // não precisou converter, porque o int cabe dentro do double //
+		// a = (int)y; // converte o double em int, senÃ£o perde informacoes //
+		// b = x; // nao precisou converter, porque o int cabe dentro do double //
 
 		// System.out.println(a);
 		// System.out.println(b);
@@ -19,21 +19,21 @@ public class main {
 
 //		int idadePessoa = 19;
 //		
-//		if(idadePessoa < 18) { // primeira condição //
-//			System.out.println("você não pode beber");
+//		if(idadePessoa < 18) { // primeira condiÃ§Ã£o //
+//			System.out.println("voce nao pode beber");
 //		}
-//		else if(idadePessoa < 60) { // segunda condição //
+//		else if(idadePessoa < 60) { // segunda condicaoo //
 //			System.out.println("Bora tomar uma?");
 //		}
 //		else { // caso o valor n se encaixe em nenhuma das condicoes //
 //			System.out.println("Aposentado ou pensionista?");
 //		}
 //
-//		System.out.println("Você tem " + idadePessoa + " anos");
+//		System.out.println("Voce tem " + idadePessoa + " anos");
 
 //		int  num = 2;
 //		
-//		switch(num) { // função escolha
+//		switch(num) { // funcao escolha
 //		case 1: //caso
 //			System.out.println("Domingo");
 //			break; //manda o switch parar e vai pra depois da chave
@@ -53,16 +53,16 @@ public class main {
 //			System.out.println("Sexta");
 //			break;
 //		case 7:
-//			System.out.println("Sábado");
+//			System.out.println("Sabado");
 //			break;
 //		default: // serve de outrocaso, caso nenhum dos outros sejam atendidos
-//			System.out.println("Este número não corresponde a nenhum dia da semana");
+//			System.out.println("Este nÃºmero nÃ£o corresponde a nenhum dia da semana");
 //		} //chave*
 
-		// pra comentar todo o codigo é só usar o crtl + /
+		// pra comentar todo o codigo Ã© sÃ³ usar o crtl + /
 
 		// char significa caractere
-//		char caractere = 'b'; // com caractere unico usa-se a aspas simples, senão vira uma string
+//		char caractere = 'b'; // com caractere unico usa-se a aspas simples, senÃ£o vira uma string
 //		
 //		switch (caractere) {
 //		case 'a':
@@ -72,7 +72,7 @@ public class main {
 //			System.out.println("seu caractere é: b");
 //			break;
 //		default:
-//			System.out.println("valor não encontrado");
+//			System.out.println("valor nÃo encontrado");
 //
 //		}
 
@@ -85,34 +85,34 @@ public class main {
 //		break;
 //			case "amarelo":
 //		System.out.println(farol);
-//		System.out.println("Luz Amarela: Atenção");
+//		System.out.println("Luz Amarela: AtenÃ§Ã£o");
 //		break;
 //			case "vermelho":
 //		System.out.println(farol);
 //		System.out.println("Luz Vermelha: Pare");
 //		break;
 //			default:
-//		System.out.println("Cor inválida, o farol de transito não possui a cor correspondente");
-//		System.out.println("Sugestão: use cores como: verde, amarelo ou vermelho");
+//		System.out.println("Cor invÃ¡lida, o farol de transito nÃ£o possui a cor correspondente");
+//		System.out.println("SugestÃ£o: use cores como: verde, amarelo ou vermelho");
 //			break;
 //	
 //		}
 
 //		int x = 0;
 //		
-//		//while é o enquanto, repete algo até a condição ser atendida, começa verificando a condição e depois faz 
+//		//while Ã© o enquanto, repete algo atÃ© a condiÃ§Ã£o ser atendida, comeÃ§a verificando a condiÃ§Ã£o e depois faz 
 //		while(x<10) {
 //			System.out.println(x);
 //			x = x + 1;
 //		}	
 //		
-//		// segundo tipo de while, o "do" significa faça. ele faz primeiro e depois atende a condição
+//		// segundo tipo de while, o "do" significa faca. ele faz primeiro e depois atende a condiÃ§Ã£o
 //		do {
 //			System.out.println(x);
 //			x = x + 1;
-//		}while (x<10); // enquanto isso n�o ocorre
+//		}while (x<10); // enquanto isso não ocorre
 
-//		//for é um para
+//		//for Ã© um para
 //		for(int x=0; x<10; x++) {
 //			System.out.println(x);
 //		}
@@ -137,24 +137,24 @@ public class main {
 //		System.out.println();
 //
 //		// metodo matriz para double
-//		double x[] = { 3, 5, 3, 5 }; // O sinal [] ta fazendo o Array, que no caso é a matriz, onde se coloca varias
-//										// infos em uma variavel só
+//		double x[] = { 3, 5, 3, 5 }; // O sinal [] ta fazendo o Array, que no caso Ã© a matriz, onde se coloca varias
+//										// infos em uma variavel so
 //
 //		for (int aux = 0; aux < x.length; aux++) { // esse length pega o valor que corresponde ao total das variaveis da
 //													// matriz
-//			System.out.println("Valor do indice " + aux + " = " + x[aux]); // aqui o "x" tá recebendo a matriz do aux
+//			System.out.println("Valor do indice " + aux + " = " + x[aux]); // aqui o "x" ta recebendo a matriz do aux
 //		}
 //
 //		// metodo matriz para string
 //		String nome[] = { "nome1", "nome2", "nome3" };
 //		for (int aux1 = 0; aux1 < nome.length; aux1++) {
 //			System.out.println(nome[aux1]);
-//			if (nome[aux1] == "nome3") { // caçando o numero da indice através da informação dentro dela
-//				System.out.println("O indice é o : " + aux1);
+//			if (nome[aux1] == "nome3") { // caÃ§ando o numero da indice atravÃ©s da informaÃ§Ã£o dentro dela
+//				System.out.println("O indice Ã© o : " + aux1);
 //			}
 //		}
 
-//		int[] arrayInt = new int[5];  // cria 5 endere�os que apontam pra cinco lugares onde ir�o os inteiros
+//		int[] arrayInt = new int[5];  // cria 5 endereços que apontam pra cinco lugares onde irão os inteiros
 //		String[] arrayString = new String[4];
 //		double[] arrayDouble = new double[3];
 //
@@ -165,7 +165,7 @@ public class main {
 //
 //		for (int aux2 = 0; aux2 < numero.length; aux2++) {
 //			System.out.println("Digite algum valor: ");
-//			numero[aux2] = teclado.nextInt(); // vai ler a informação dada pelo usuario, vai ser gravados em posiçoes
+//			numero[aux2] = teclado.nextInt(); // vai ler a informacao dada pelo usuario, vai ser gravados em posicoes
 //												// diferentes
 //		}
 //		for (int aux2 = 0; aux2 < numero.length; aux2++) {
@@ -180,7 +180,7 @@ public class main {
 //		arrayObject[1] = "Marcos"; // recebe string
 //		arrayObject[2] = 13.0; // recebe double
 //		arrayObject[3] = true; // recebe boolean
-//		arrayObject[5] = arrayQualquer; // e at� endere�o
+//		arrayObject[5] = arrayQualquer; // e até endereço
 //
 //		for (int aux2 = 0; aux2 < arrayObject.length; aux2++) {
 //			System.out.println("Indice " + aux2 + " = " + arrayObject[aux2]);
@@ -192,7 +192,7 @@ public class main {
 		arrayBidirecional[2][1] = 7;
 		
 
-		for (int linha = 0; linha < arrayBidirecional.length; linha++) { // esse length v� a linha
+		for (int linha = 0; linha < arrayBidirecional.length; linha++) { // esse length vê a linha
 			for (int coluna = 0; coluna < arrayBidirecional[0].length; coluna++) { // o zero confere o tamanho do
 																					// segundo indice
 				System.out.print( // print sozinho deixa os valores um do lado do outro
