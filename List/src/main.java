@@ -1,11 +1,11 @@
 import java.util.ArrayList;
-import java.util.List; // importaÁoes, usando o crtl + shift + o
+import java.util.List; // importa√ßoes, usando o crtl + shift + o
 
-public class main { // a list È uma interface
+public class main { // a list √© uma interface
 
 	public static void main(String[] args) {
 
-//		// n„o precisou colocar o tamanho da matriz, pq o list j· configurou
+//		// n√£o precisou colocar o tamanho da matriz, pq o list j√° configurou
 //		// automaticamente
 //		List lista = new ArrayList(); // ambos foram importados do java.util
 //
@@ -14,8 +14,8 @@ public class main { // a list È uma interface
 //		lista.add(true);
 //
 //		// metodo 1
-//		for (int x = 0; x < lista.size(); x++) { // o size È o substituto do length nessa operaÁ„o
-//			System.out.println(lista.get(x)); // meio pra expor o indice, que È diferente da forma da matriz
+//		for (int x = 0; x < lista.size(); x++) { // o size √© o substituto do length nessa opera√ß√£o
+//			System.out.println(lista.get(x)); // meio pra expor o indice, que √© diferente da forma da matriz
 //		}
 //
 //		// metodo 2
@@ -26,7 +26,7 @@ public class main { // a list È uma interface
 //		}
 //
 //		System.out.println();
-//		lista.add(0, "def"); // adiciona uma info na posiÁ„o escolhida sem apagar
+//		lista.add(0, "def"); // adiciona uma info na posi√ß√£o escolhida sem apagar
 //		for (Object valor : lista) { // o tipo object recebe todos os tipos de info
 //			System.out.println(valor);
 //		}
@@ -37,14 +37,14 @@ public class main { // a list È uma interface
 //		}
 //		System.out.println();
 //		lista.clear(); // limpa toda a lista
-//		if (lista.isEmpty()) { // isEmpty confere se est· ou n„o vazia
-//			System.out.println("Sua lista est· V·zia");
+//		if (lista.isEmpty()) { // isEmpty confere se est√° ou n√£o vazia
+//			System.out.println("Sua lista est√° V√°zia");
 //		}
 
 		Conta conta1 = new Conta("Agua", 60.00);
 		Conta conta2 = new Conta("Luz", 120.00);
 
-		List<Conta> listaDeContas = new ArrayList<Conta>(); // O <x> È o generics, ele limita ao objeto a receber apenas
+		List<Conta> listaDeContas = new ArrayList<Conta>(); // O < x > √© o generics, ele limita ao objeto a receber apenas
 															// os informacoes que pertencem ao "Conta"
 		listaDeContas.add(conta1);
 		listaDeContas.add(conta2);
