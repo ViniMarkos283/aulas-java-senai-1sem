@@ -1,29 +1,27 @@
-import java.util.Scanner;
 
 public class Lampada {
 
-	boolean estado;
-	int escolha;
-	int escolher;
-	
-	public Lampada() {
-		estado = true;
-	
-	
-	if(escolha == 1) {
+	private boolean estado; // variavel boleana
+
+	public Lampada(boolean estado) { // construtor
+		this.estado = estado;
+	}
+
+	public void ligar() { //metodo para ativar
 		estado = true;
 	}
-	else if(escolha == 0) {
+
+	public void desligar() { //metodo para desativar
 		estado = false;
 	}
-}
 
-	public boolean estado() {
-		return estado;
+	public void imprimir() { //impressao do resultado
+		if (estado == true) {
+			System.out.println("Ação registrada!");
+			System.out.println("A lampada está Ligada");
+		} else {
+			System.out.println("Ação registrada!");
+			System.out.println("A lampada está Desligada");
 		}
-	
-	public void receber(int escolher) {
-		 escolha = escolher;
 	}
 }
-

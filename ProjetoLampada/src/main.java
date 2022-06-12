@@ -4,40 +4,20 @@ public class main {
 
 	public static void main(String[] args) {
 
-		Lampada lamp = new Lampada();
-		
-		Scanner entrada = new Scanner(System.in);
-	
-		while (lamp.escolha == 2) {
-		if (lamp.estado = true) {
-		System.out.println("lampada encontrada, mas estï¿½ ligada, o que deseja fazer?");
-		System.out.println("0 - desligar");
-		System.out.println("2 - sair");
+		int situacao = 0; //cara que vai mudar a situacao da lampada
+		Lampada lamp = new Lampada(true); // instancia da classe lampada
 
-		int escolher = entrada.nextInt();
+		Scanner entrada = new Scanner(System.in); // scanner que vai pegar a informacao digitada
+
+		System.out.println("Voce encontrou uma lampada, e ela se encontra acesa!"); //dialogo para parecer um jogo RPG
+		System.out.println("Deseja mudar o estado da lâmpada? 1- Sim  2-Não\n");
+		situacao = entrada.nextInt(); //aqui vai ser digitado o valor
+
+		if (situacao != 1) { // caso 1, ele vai mudar o estado da lampada
+			lamp.imprimir();
+		} else { // caso 2, ele vai manter ela ligada e soltar a mensagem
+			lamp.desligar(); 
+			lamp.imprimir();
 		}
-		
-		else if (lamp.estado = false) {
-				System.out.println("lampada encontrada, mas estï¿½ desligada, o que deseja fazer?");
-				System.out.println("1 - ligar");
-				
-				int escolher = entrada.nextInt();
-				}
-		}
-		
-		switch (lamp.escolher) {
-		case 0:
-		System.out.println("Lampada Desligada");
-		break;
-		case 1:
-			System.out.println("lampada Ligada");
-		break;
 	}
-	}
-} // preciso arrumar, ainda n ta funcionando
-
-	
-		
-	
-		
-
+}
