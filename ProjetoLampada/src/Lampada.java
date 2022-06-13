@@ -17,11 +17,11 @@ public class Lampada {
 
 	public void imprimir() { //impressao do resultado
 		if (estado == true) {
-			System.out.println("Ação registrada!");
-			System.out.println("A lampada está Ligada");
+			System.out.println("Acao registrada!");
+			System.out.println("A lampada estï¿½ Ligada");
 		} else {
-			System.out.println("Ação registrada!");
-			System.out.println("A lampada está Desligada");
+			System.out.println("Acao registrada!");
+			System.out.println("A lampada estï¿½ Desligada");
 		}
 	}
 }

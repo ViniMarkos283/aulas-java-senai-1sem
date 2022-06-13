@@ -10,7 +10,7 @@ public class main {
 		Scanner entrada = new Scanner(System.in); // scanner que vai pegar a informacao digitada
 
 		System.out.println("Voce encontrou uma lampada, e ela se encontra acesa!"); //dialogo para parecer um jogo RPG
-		System.out.println("Deseja mudar o estado da lâmpada? 1- Sim  2-Não\n");
+		System.out.println("Deseja mudar o estado da lampada? 1- Sim  2-Nao\n");
 		situacao = entrada.nextInt(); //aqui vai ser digitado o valor
 
 		if (situacao != 1) { // caso 1, ele vai mudar o estado da lampada
